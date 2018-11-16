@@ -15,11 +15,8 @@ python3 Module virtualenv
 **how to isntall without console script:**  
 ```
 ~ git clone https://github.com/AntzInThePantz/most_occurred_symbol.git  
-9
 ~ cd most_occurred_symbol  
-10
 ~ python3 -m venv .  
-11
 ~ . bin/activate  
 ~ chmod +x most_occurred_symbol/__init__.py
 ```
