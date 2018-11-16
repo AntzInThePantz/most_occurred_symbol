@@ -16,7 +16,7 @@ def most_occurred_letter(string, case_sensitive=True):
             occurrences[symbol] += 1
         else:
             occurrences[symbol] = 1
-    return max(occurrences.items(), key=itemgetter(1))[0]
+    return max(occurrences.items(), key=itemgetter(1))[0] #occurences.items() makes a list of tuples out of the Dictionary. The first value of the Tuple is the key of the Dictionary and the second one its value. The max funktion searches for the tuple with the bigest value at index 1 (the biggest value of the dictionary) and from this tuple the index 0 is returned (which is the key of the occurrences dictionary with the highest value).
 
 def main():
     print("This Programm shows you the Symbol with the most occurrences")
