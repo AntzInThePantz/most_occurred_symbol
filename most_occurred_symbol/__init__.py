@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from operator import itemgetter
 import os
 import psutil
 import sys
@@ -14,13 +15,8 @@ def most_occurred_letter(string, case_sensitive=True):
         if symbol in occurrences:
             occurrences[symbol] += 1
         else:
-            occurrences[symbol] = 1 
-    sorted_letters = [letter for letter in sorted(
-        occurrences,
-        key=occurrences.get,
-        reverse=True)]
-    if sorted_letters:
-        return sorted_letters[0]
+            occurrences[symbol] = 1
+    return max(occurrences.items(), key=itemgetter(1))[0]
 
 def main():
     print("This Programm shows you the Symbol with the most occurrences")
