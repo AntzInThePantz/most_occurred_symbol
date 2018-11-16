@@ -12,7 +12,7 @@ python3 Module virtualenv
 ~ python3 setup.py develop  
 ```
 
-**how to isntall without console script:**  
+**how to install without console script:**  
 ```
 ~ git clone https://github.com/AntzInThePantz/most_occurred_symbol.git  
 ~ cd most_occurred_symbol  
@@ -23,7 +23,7 @@ python3 Module virtualenv
 
 **how to execute with console script:**  
 ```
-~ most-occurrences
+~ find-most-occurred-letter
 ```
 
 **how to execute without console script:**  
