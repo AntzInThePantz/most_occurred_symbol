@@ -21,6 +21,9 @@ def most_occurred_letter(string, case_sensitive=True):
 def main():
     print("This Programm shows you the Symbol with the most occurrences")
     string = input("Please insert your String: ")
+    if not string:
+        print("An empty string doesn't contain symbols")
+        exit()
     case_sensitive = input("Should case sensitivity matter? [Y/n]")
     start = time.time()
     if case_sensitive.lower() == "y" or case_sensitive == "":
