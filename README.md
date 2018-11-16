@@ -22,10 +22,14 @@ python3 Module virtualenv
 11
 ~ . bin/activate  
 ~ chmod +x most_occurred_symbol/__init__.py
-~ ./most_occurred_symbol/__init__.py
 ```
 
-**how to execute:**  
+**how to execute with console script:**  
 ```
 ~ most-occurrences
+```
+
+**how to execute without console script:**  
+```
+~ ./most_occurred_symbol/__init__.py
 ```
