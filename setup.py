@@ -28,7 +28,7 @@ if __name__ == "__main__":
         author_email="roesch_andreas@gmx.net",
         entry_points = {
             "console_scripts": [
-                "most-occurrences = most_occurred_symbol.__init__:main",
+                "find-most-occurred-letter = most_occurred_symbol.__init__:main",
             ],
         }
     )
