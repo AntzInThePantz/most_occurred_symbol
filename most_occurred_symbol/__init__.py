@@ -6,7 +6,7 @@ import sys
 import time
 import traceback
 
-def most_occurred_letter(string, case_sensitive=True):
+def most_occurred_symbol(string, case_sensitive=True):
     """returns the most occurred symbol for a given string"""
     if not case_sensitive:
         string = string.lower()
@@ -27,11 +27,11 @@ def main():
     case_sensitive = input("Should case sensitivity matter? [Y/n]")
     start = time.time()
     if case_sensitive.lower() == "y" or case_sensitive == "":
-        print("Symbol '{}' had the most occurrences".format(most_occurred_letter(string)))
+        print("Symbol '{}' had the most occurrences".format(most_occurred_symbol(string)))
         end = time.time()
     elif case_sensitive.lower() == "n":
         print("Symbol '{}' had the most occurrences".format(
-            most_occurred_letter(string,
+            most_occurred_symbol(string,
             case_sensitive=False)))
         end = time.time()
     else:
