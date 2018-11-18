@@ -1,10 +1,7 @@
 """Tests for most occurred symbol"""
 from unittest import TestCase
 from unittest.mock import (
-    MagicMock,
-    Mock,
     patch,
-    PropertyMock,
 )
 
 import most_occurred_symbol
