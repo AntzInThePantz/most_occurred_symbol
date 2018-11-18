@@ -7,7 +7,7 @@ from unittest.mock import (
     PropertyMock,
 )
 
-from most_occurred_symbol import *
+import most_occurred_symbol
 
 class TestMostOccurredSymbol(TestCase):
     """Test class for tzhe most occurred Symbol"""
