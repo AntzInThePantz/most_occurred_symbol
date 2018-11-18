@@ -30,3 +30,9 @@ python3 Module virtualenv
 ```
 ~ ./most_occurred_symbol/__init__.py
 ```
+
+**how to run tests:**  
+```
+~ pip install nose
+~ python setup.py test --with-coverage
+```
