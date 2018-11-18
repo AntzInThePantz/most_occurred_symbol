@@ -12,6 +12,11 @@ requires = [
     'psutil',
 ]
 
+TESTS_REQUIRE = [
+    "nose",
+    "nose-cov",
+]
+
 here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, "README.md")).read()
 CHANGES = open(os.path.join(here, "CHANGES.txt")).read()
@@ -21,6 +26,7 @@ if __name__ == "__main__":
         name='most_occurred_symbol',
         install_requires=requires,
         version=VERSION,
+        tests_require=TESTS_REQUIRE,
         description="Most occured Symbols library and scripts.",
         long_description=README + "\n\n" +  CHANGES,
         classifiers=CLASSIFIERS,
