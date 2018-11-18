@@ -1,10 +1,9 @@
 """Tests for most occurred symbol"""
 from unittest import TestCase
-from unittest.mock import (
-    patch,
-)
+from unittest.mock import patch
 
 import most_occurred_symbol
+
 
 class TestMostOccurredSymbol(TestCase):
     """Test class for tzhe most occurred Symbol"""
